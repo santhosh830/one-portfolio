@@ -1,11 +1,12 @@
-import React from 'react';
-import image from '../assets/profile.jpg';
+import React from 'react'
+import image from '../assets/profile.jpg'
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link } from 'react-scroll';
 
+
 const Home = () => {
   return (
-    <div name="home" className='h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 overflow-x-hidden'>
+    <div name='home' className='bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-screen overflow-x-hidden'>
         <div className='max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row'>
             <div className='flex flex-col justify-center h-full'>
                <h2 className='text-3xl sm:text-6xl font-bold text-white'>
@@ -25,12 +26,13 @@ const Home = () => {
                  </Link>
                </div>
             </div>
-            <div>
-                 <img src={image} alt="my profile" className='rounded-2xl mx-auto w-2/3 md:w-full max-w-sm'/>
-            </div>
+             <div>
+                 <img src={image} alt="my profile" className='rounded-2xl mx-auto w-2/3 md:w-full'/>
+             </div>
         </div>        
+         
     </div>
   )
 }
 
-export default Home;
+export default Home
